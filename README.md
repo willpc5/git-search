@@ -1,0 +1,3 @@
+Projeto bem simples para consumir a API dos nossos repositórios do Github
+Lembre-se de mudar o nickname na URL da API:
+https://api.github.com/users/nickname...
