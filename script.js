@@ -1,32 +1,38 @@
-const repositories = document.querySelector('.content-main');
+function searchUser() {
+  const usernameInput = document.getElementById('usernameInput');
+  const userDataDiv = document.getElementById('userData');
+  const username = usernameInput.value.trim();
 
-function getApiGitHub() {
-  fetch('https://api.github.com/users/willpc5/repos')
-  .then(async res => {
-    if ( !res.ok) {
-      throw new Error(res.status);
-    }
+  if (username === '') {
+    userDataDiv.innerHTML = 'Por favor, digite um nome de usuário válido.';
+    return;
+  }
 
-    let data = await res.json();
-    data.map( item => {
-      let project = document.createElement('div');
+  const token = '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';
+  const headers = {
+    'Authorization': `Bearer ${token}`
+  };
 
-      project.innerHTML = `
-      <div class="project">
-      <div>
-        <h4 class="title">${ item.name }</h4>
-        <span class="date-create">${ Intl.DateTimeFormat('pt-Br').format(new Date(item.created_at))  }</span>
-      </div>
-      <div>
-        <a href="${ item.html_url }" target="_blank">${ item.html_url }</a>
-        <span class="language"><span class="circle"></span>${ item.language }</span>
-      </div>
-    </div>
-    `;
+  axios.get(`https://api.github.com/users/${username}`, { headers })
+    .then(response => {
+      const userData = response.data;
+      const userDataDiv = document.getElementById('userData');
 
-      repositories.appendChild(project);
+      const html = `
+      <img src="${userData.avatar_url}" alt="Foto de Perfil">
+        <h2>${userData.name}</h2>
+        <p>${userData.bio}</p>  
+        <p>Company: ${userData.company}</p>
+        <p>Repositórios: ${userData.public_repos}</p>
+        <p>Seguidores: ${userData.followers}</p>
+        <p>Seguindo: ${userData.following}</p>
+        <p>Localização: ${userData.location}</p>
+        <p>WebSite: ${userData.blog}</p>
+      `;
+      userDataDiv.innerHTML = html;
     })
-  })
+    .catch(error => {
+      userDataDiv.innerHTML = 'Não foi possível encontrar o usuário.';
+      console.error('Erro ao buscar usuário do GitHub', error);
+    });
 }
-
-getApiGitHub();
