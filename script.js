@@ -8,7 +8,7 @@ function searchUser() {
     return;
   }
 
-  const token = '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';
+  const token = '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';
   const headers = {
     'Authorization': `Bearer ${token}`
   };
