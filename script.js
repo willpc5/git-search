@@ -8,12 +8,7 @@ function searchUser() {
     return;
   }
 
-  const token = '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';
-  const headers = {
-    'Authorization': `Bearer ${token}`
-  };
-
-  axios.get(`https://api.github.com/users/${username}`, { headers })
+  axios.get(`https://api.github.com/users/${username}`)
     .then(response => {
       const userData = response.data;
       const userDataDiv = document.getElementById('userData');

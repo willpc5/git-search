@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>GitHub User Search</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
 </head>
+
 <body>
-  <h1>GitHub User Search</h1>
-  <input type="text" id="usernameInput" placeholder="Digite o nome de usuário do GitHub">
-  <button onclick="searchUser()">Pesquisar</button>
-  <img id="profilePicture" src="" alt="">
-  <div id="userData"></div>
+  <div class="container">
+    <h1>api-gihub.</h1>
+    <input type="text" id="usernameInput" placeholder="Digite o nome de usuário do GitHub">
+    <button onclick="searchUser()">Pesquisar</button>
+    <div id="userData"></div>
+  </div>
 
   <script src="./script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
+
 </html>
