@@ -4,8 +4,70 @@
     box-sizing: border-box;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    margin: 50px 0;
+
+    text-align: center;
+}
+
+.section-1 {
+    display: flex;
+    gap: 0.7%;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.section-1 input {
+    padding: 10px;
+    width: 330px;
+}
+
+.section-1 .btn {
+    cursor: pointer;
+
+    padding: 10px;
+}
+
+#userData {
+    border: 1px solid;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 50%;
+}
+
 img {
     border-radius: 50%;
 
-    width: 10%;
+    width: 150px;
+}
+
+.section-2 .bio {
+    margin-bottom: 20px;
+}
+
+.section-2 .social {
+    display: flex;
+    gap: 20px;
+}
+
+.perfil, .section-3 {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.section-3 {
+    border: 2px dashed;
+
+    margin-top: 20px;
+    padding: 30px;
 }
