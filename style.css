@@ -31,7 +31,7 @@ body {
 .section-1 input {
     border-radius: 10px;
     font-family: 'Space Grotesk', sans-serif;
-
+    background-color: lightgray;
     padding: 10px;
     width: 330px;
 }
@@ -41,7 +41,8 @@ body {
     border-radius: 10px;
     cursor: pointer;
     font-family: 'Space Grotesk', sans-serif;
-
+    background-color: darkcyan;
+    color: #FFF;
     padding: 10px;
     width: 100px;
 }
@@ -49,7 +50,7 @@ body {
 #userData {
     border: 1px solid;
     border-radius: 10px;
-
+    background-color: lightgray;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,7 +77,8 @@ img {
     width: 90%;
 }
 
-.perfil, .section-3 {
+.perfil,
+.section-3 {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -85,7 +87,8 @@ img {
 
 .section-3 {
     border: 2px dashed;
-
+    background-color: darkcyan;
+    color: #FFF;
     margin-top: 20px;
     padding: 30px;
 }
