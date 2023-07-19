@@ -1,1 +1,0 @@
-Projeto para consumir a API dos nossos repositórios e informações do Github.
