@@ -10,6 +10,11 @@ body {
     font-size: 14px;
 }
 
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -28,7 +33,7 @@ body {
 
 .section-1 {
     display: flex;
-    gap: 0.7%;
+    gap: 0.75rem;
     justify-content: center;
     margin: 50px 0 30px 0;
 }
