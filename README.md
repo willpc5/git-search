@@ -2,7 +2,7 @@
 <br/>
 Enconte um usuário do GitHub
 
-<img alt="" src="./src/images/screenshot-01.png" width="80%">
+<img alt="" src="./src/images/screenshot-01.png" width="90%">
 
 
 ---
@@ -14,4 +14,4 @@ Esse projeto foi desenvolvido com **HTML**, **CSS**, **JavaScript** e utilizada 
 <br/>
 Campo para pesquisar pelo nome de usuário e trazer os dados do usuário pesquisado.
 
-**🖱️ Visite:** _https://willpc5.github.io/api-github/_
+**🖱️ Visite:** _https://willpc5.github.io/git-search/_
