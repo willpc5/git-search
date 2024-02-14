@@ -1,29 +1,17 @@
-<h1 align="center">GitSearch</h1>
+**GitSearch**
+<br/>
+Enconte um usuário do GitHub
 
-<p align="center">
-Enconte um usuário do GitHub.
-</p>
+---
 
-<p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</p>
-<br>
+<img alt="" src="./src/images/screenshot-02.png" width="80%">
 
-<!-- <p align="center">
-  <img alt="" src="#" width="100%">
-</p> -->
+**🚀 Tecnologias:**
+<br/>
+Esse projeto foi desenvolvido com **HTML**, **CSS**, **JavaScript** e utilizada a biblioteca **Axios** para consumir a _API do GitHub_.
 
-## 🚀 Tecnologias
+**💻 Projeto:**
+<br/>
+Campo para pesquisar pelo nome de usuário e trazer os dados do usuário pesquisado.
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
-
-- HTML e CSS
-- JavaScript
-- Git
-
-## 💻 Projeto
-
-Projeto para consumir a API do GitHub e trazer os dados do usuário pesquisado.
-
-<!-- ## 🖱️ Visite -->
+**🖱️ Visite:** _https://willpc5.github.io/api-github/_
