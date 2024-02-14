@@ -2,10 +2,10 @@
 <br/>
 Enconte um usuário do GitHub
 
+<img alt="" src="./src/images/screenshot-01.png" width="80%">
+
+
 ---
-
-<img alt="" src="./src/images/screenshot-02.png" width="80%">
-
 **🚀 Tecnologias:**
 <br/>
 Esse projeto foi desenvolvido com **HTML**, **CSS**, **JavaScript** e utilizada a biblioteca **Axios** para consumir a _API do GitHub_.
